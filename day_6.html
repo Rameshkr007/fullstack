@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div >
+            <h1 id="Heading">DOMINATOR</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex explicabo ducimus 
+            deserunt, minus vitae praesentium est placeat velit accusantium reprehenderit 
+            ipsam exercitat0ionem! Perspiciatis officia libero iste ex commodi, illum architecto!</p>
+            <button id="btn">Click me!</button>
+    </div>
+
+</body>
+<script>
+    const data = document.getElementById('Heading');
+    data.style.color = 'red';
+
+const button = document.getElementById('btn');
+button.addEventListener('click', () => {
+    button.innerText = "Loading...";
+    button.disabled = true;
+    document.body.style.backgroundColor = "black";
+    document.body.style.color = "white";
+});
+</script>
+</html>
