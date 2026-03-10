@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Password Example</title>
+</head>
+
+<body>
+
+<h2>Password Check</h2>
+
+<form id="form">
+
+<input type="password" id="pass" placeholder="Enter password">
+
+<button type="submit">Submit</button>
+
+</form>
+
+<script>
+
+const form = document.querySelector("#form")
+const passInput = document.querySelector("#pass")
+
+form.addEventListener("submit", function(e){
+
+e.preventDefault()
+
+const password = passInput.value
+
+if(password.length >= 8 && password.length <= 10 && /[A-Z]/.test(password)){
+    console.log("Valid Password")
+}else{
+    console.log("Invalid Password")
+}
+
+})
+
+</script>
+
+</body>
+</html>
